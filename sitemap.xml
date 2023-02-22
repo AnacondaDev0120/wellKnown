@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>https://app.fablefrog.com/static_sitemap.xml</loc>
+    </url>
+    <url>
+        <loc>https://app.fablefrog.com/profiles/sitemap/sitemap.xml</loc>
+    </url>
+    <url>
+        <loc>https://app.fablefrog.com/topic/sitemap/sitemap.xml</loc>
+    </url>
+    <url>
+        <loc>https://app.fablefrog.com/fables/sitemap/sitemap.xml</loc>
+    </url>
+</urlset>

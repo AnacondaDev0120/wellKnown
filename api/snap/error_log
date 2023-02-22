@@ -1,0 +1,24 @@
+[02-Feb-2022 09:41:46 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on bool in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php:318
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/api/snap/index.php(21): Snapchat->getFriendStories()
+#1 {main}
+  thrown in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php on line 318
+[02-Feb-2022 09:42:17 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on bool in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php:235
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php(414): Snapchat->getUpdates()
+#1 /home/fablhiyo/app.fablefrog.com/api/snap/index.php(65): Snapchat->getFriends()
+#2 {main}
+  thrown in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php on line 235
+[02-Feb-2022 09:43:08 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on bool in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php:235
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php(430): Snapchat->getUpdates()
+#1 /home/fablhiyo/app.fablefrog.com/api/snap/index.php(75): Snapchat->getAddedFriends()
+#2 {main}
+  thrown in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php on line 235
+[03-Feb-2022 16:35:16 UTC] PHP Warning:  Undefined property: Snapchat::$cache in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php on line 234
+[03-Feb-2022 16:35:16 UTC] PHP Fatal error:  Uncaught Error: Call to a member function get() on null in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php:234
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php(274): Snapchat->getUpdates()
+#1 /home/fablhiyo/app.fablefrog.com/api/snap/index.php(19): Snapchat->getSnaps()
+#2 {main}
+  thrown in /home/fablhiyo/app.fablefrog.com/api/snap/snapchat.php on line 234

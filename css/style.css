@@ -1,0 +1,3055 @@
+@font-face {
+    font-family: YandexSansText-Regular;
+    src: url(../fonts/YandexSansText-Regular.ttf)
+}
+
+@font-face {
+    font-family: GT-Super-Display-Super;
+    src: url(../fonts/GT-Super-Display-Super.ttf)
+}
+
+:root {
+    --fontcolor: rgba(32, 35, 51, 0.5);
+    --themeColor: #0e101b
+}
+
+body {
+    font-size: 1em;
+    font-family: YandexSansText-Regular
+}
+
+.GtSuper {
+    font-family: GT-Super-Display-Super!important
+}
+
+.pageHeader {
+    padding: .6em 1em;
+    display: flex;
+    align-items: center;
+    background-color: #fff
+}
+
+.pageHeader .commonDiv {
+    width: 25%
+}
+
+.pageHeader .headerInput {
+    width: 50%;
+    position: relative
+}
+
+.pageHeader .brand {
+    display: inline-block;
+    font-size: 2em;
+    color: var(--themeColor);
+    text-decoration: none;
+    font-weight: 700
+}
+
+.pageHeader .btn {
+    font-size: .9em;
+    border-radius: .6em
+}
+
+.pageHeader .headerInput input,
+.pageHeader .headerInput select {
+    width: 100%;
+    padding: .4em .4em .4em 2.5em;
+    border-radius: .6em;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    outline: 0
+}
+
+.pageHeader .headerInput i {
+    position: absolute;
+    top: 12px;
+    left: 14px;
+    color: grey
+}
+
+.pageHeader .headerInput input:focus {
+    border-color: #000;
+    background-color: #fff
+}
+
+.pageContents {
+    display: flex;
+    padding: 1em;
+    margin-top: 4em
+}
+
+.menuSide {
+    width: 25%;
+    padding-right: 4em;
+    position: fixed;
+    left: 16px;
+    top: 80px
+}
+
+.menuSide .menuLink {
+    padding: .7em 1em;
+    display: block;
+    color: var(--themeColor);
+    border-radius: 2em;
+    font-weight: 600;
+    transition: .2s ease-in-out;
+    margin-bottom: .5em
+}
+
+.menuSide .menuLink i {
+    margin-right: .5em
+}
+
+.menuSide .menuLink:hover {
+    background-color: rgba(32, 35, 51, .1);
+    text-decoration: none
+}
+
+.menuSide .menuLink.active {
+    background-color: #ffffff
+}
+
+.menuSide .mainBtn {
+    width: 100%;
+    display: block;
+    padding: .6em;
+    border-radius: .8em;
+    background-color: var(--themeColor);
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    opacity: .9;
+    margin-top: 1.4em;
+    transition: .2s ease-in-out
+}
+
+.menuSide .mainBtn:hover {
+    opacity: 1
+}
+
+.menuSide .footerLinks {
+    margin-top: 4.7em
+}
+
+.menuSide .footerLinks .socialMediaLink {
+    background-color: rgba(32, 35, 51, .2);
+    color: var(--themeColor);
+    display: inline-block;
+    height: 1.7em;
+    width: 1.7em;
+    line-height: 1.7;
+    margin-right: .5em;
+    border-radius: 50%;
+    text-align: center;
+    opacity: .3;
+    transition: .2s ease-in-out
+}
+
+.menuSide .footerLinks .socialMediaLink:hover {
+    opacity: 1
+}
+
+.menuSide .footerLinks .downloadLink {
+    background-color: rgba(32, 35, 51, .05);
+    color: var(--themeColor);
+    padding: .5em .8em;
+    font-size: .8em;
+    font-weight: 500;
+    border-radius: .7em;
+    display: inline-block;
+    text-decoration: none;
+    margin: 1em 0 .4em 0
+}
+
+.menuSide .footerLinks .downloadLink i {
+    margin-right: .4em
+}
+
+.menuSide .footerLinks .footerLink {
+    color: var(--fontcolor);
+    font-size: .8em;
+    display: inline-block;
+    text-decoration: none;
+    transition: .2s ease-in-out;
+    margin-right: .7em
+}
+
+.menuSide .footerLinks .footerLink:hover {
+    color: #000
+}
+
+.menuSide .footerLinks .copyRightText {
+    color: var(--fontcolor);
+    font-size: .8em;
+    margin-top: .2em
+}
+
+.menuSide .footerLinks .copyRightText .footerLink {
+    font-size: 1em
+}
+
+.midContents {
+    width: 50%;
+    margin: auto
+}
+
+.midContents .borderBox {
+    border: 1px solid rgba(32, 35, 51, .09);
+    border-radius: 1.3em;
+    padding: 1.2em;
+    margin-bottom: 1.8em
+}
+
+.midContents .borderBox .borderBoxHeader {
+    display: flex;
+    position: relative
+}
+
+.midContents .borderBox .userImg {
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-right: .8em
+}
+
+.midContents .borderBox .userName {
+    font-weight: 700;
+    color: #000
+}
+
+.midContents .borderBox .userMessage {
+    font-size: .9em;
+    color: rgba(32, 35, 51, .7)
+}
+
+.midContents .borderBox .userMessage a {
+    color: rgba(32, 35, 51, .7);
+    text-decoration: none;
+    display: block
+}
+
+.midContents .hoverBtn {
+    color: #b1844e;
+    font-size: .7em;
+    padding: .1em .5em;
+    margin-left: .3em;
+    border: 1px solid rgba(32, 35, 51, .05);
+    border-radius: 1.5em;
+    text-decoration: none;
+    display: inline-block;
+    position: relative
+}
+
+.midContents .hoverBtn i {
+    margin-right: .5em
+}
+
+.midContents .hoverBtn:hover .hideText {
+    display: block
+}
+
+.midContents .tooltipBtn.hoverBtn .hideText {
+    width: 350px;
+    z-index: 1000;
+    text-align: left
+}
+
+.midContents .tooltipBtn.hoverBtn .hideText a {
+    display: block;
+    color: rgba(255, 255, 255, .7)
+}
+
+.midContents .tooltipBtn.hoverBtn .hideText .activeIcon {
+    left: 55%;
+    transform: translateX(-50%)
+}
+
+.midContents .tooltipBtn.hoverBtn .hideText .fa-times-circle {
+    cursor: pointer;
+    color: rgba(255, 255, 255, .3);
+    right: 4px;
+    top: 10px;
+    position: absolute;
+    font-size: 1.1em;
+    transition: .2s ease-in-out
+}
+
+.midContents .tooltipBtn.hoverBtn .hideText .fa-times-circle:hover {
+    color: rgba(255, 255, 255, .7)
+}
+
+.midContents .hideText {
+    background-color: var(--themeColor);
+    padding: .8em;
+    border-radius: .9em;
+    color: rgba(255, 255, 255, .7);
+    font-size: 1.2em;
+    position: absolute;
+    top: calc(100% + 14px);
+    left: 35%;
+    transform: translateX(-50%);
+    width: 180px;
+    text-align: center;
+    transition: .2s ease-in-out;
+    display: none;
+    z-index: 1000
+}
+
+.midContents .activeIcon {
+    width: 0;
+    height: 0;
+    border-bottom: 23px solid var(--themeColor);
+    border-right: 30px solid transparent;
+    display: inline-block;
+    position: absolute;
+    right: 35px;
+    top: -14px
+}
+
+.midContents .borderBox .addBtn {
+    background-color: #f6f2e9;
+    display: inline-block;
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 50%;
+    position: absolute;
+    right: -6px;
+    top: 15px;
+    text-align: center;
+    line-height: 2.3;
+    color: #000;
+    font-size: .9em;
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .addBtn:hover {
+    background: #f0e5cd
+}
+
+.midContents .borderBox .userCard {
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: 1em;
+    position: absolute;
+    top: 90%;
+    left: -90px;
+    width: 270px;
+    border-radius: 1em;
+    overflow: hidden;
+    display: none
+}
+
+.midContents .borderBox .hoverImageParent {
+    position: relative;
+    cursor: pointer
+}
+
+.midContents .borderBox .hoverImageParent:hover .userCard {
+    display: block
+}
+
+.midContents .borderBox .userCard .userCardHeader {
+    padding: 2.5em;
+    background-image: url(../img/user-card-img.png);
+    background-position: center;
+    background-size: cover
+}
+
+.midContents .borderBox .userCard .userCardImage {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #fff
+}
+
+.midContents .borderBox .userCard .cardBtn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #f6f2e9;
+    color: #000;
+    padding: .4em 1em;
+    border: 2px solid #fff;
+    border-radius: 1.5em;
+    font-size: .9em;
+    transition: .2s ease-in-out;
+    margin-top: .5em
+}
+
+.midContents .borderBox .userCard .cardBtn i {
+    margin-right: .6em
+}
+
+.midContents .borderBox .userCard .cardBtn:hover {
+    background: #f0e5cd
+}
+
+.midContents .borderBox .userCard .userCardSubBody {
+    padding: 0 1em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: -2em
+}
+
+.midContents .borderBox .userCard .userCardBody {
+    padding: .5em 1em
+}
+
+.midContents .borderBox .userCard .userName {
+    font-family: GT-Super-Display-Super
+}
+
+.midContents .borderBox .userCard .cardText {
+    color: #000;
+    margin: .5em 0
+}
+
+.midContents .borderBox .userCard .cardText a {
+    color: #000;
+    font-weight: 800;
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .userCard .cardText i {
+    margin-right: .3em
+}
+
+.midContents .borderBox .userCard .cardText a:hover {
+    color: rgba(0, 0, 0, .5);
+    text-decoration: none
+}
+
+.midContents .borderBox .userCard .cardOddText {
+    font-size: .9em
+}
+
+.midContents .borderBox .userCard .cardOddText i {
+    margin-right: .3em
+}
+
+.midContents .borderBox .userCard .cardOddText a {
+    font-weight: 800;
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .userCard .cardOddText a:hover {
+    color: rgba(0, 0, 0, .5)
+}
+
+.midContents .borderBox .userCard .cardsButtons a {
+    border: 1px solid rgba(0, 0, 0, .1);
+    text-decoration: none;
+    display: inline-block;
+    color: #000;
+    font-weight: 800;
+    padding: .3em .5em;
+    border-radius: .8em;
+    width: 48%;
+    text-align: center;
+    margin: 1em 0
+}
+
+.midContents .borderBox .userCard .cardsButtons .lightText {
+    color: var(--fontcolor);
+    font-size: .7em;
+    font-weight: 200
+}
+
+.midContents .borderBox .userCard .cardsButtons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.midContents .borderBox .borderBoxBody {
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
+    min-height: 25vh;
+    padding: 1em;
+    margin: 1.2em 0
+}
+
+.midContents .borderBox .borderBoxTextArea .mainHeading {
+    font-family: GT-Super-Display-Super;
+    color: #000;
+    font-size: 1.5em;
+    font-weight: 800
+}
+
+.midContents .borderBox .borderBoxTextArea .mainText {
+    margin-top: .7em
+}
+
+.midContents .borderBox .borderBoxTextArea .mainText .moreLink {
+    font-weight: 800;
+    color: #000;
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .borderBoxTextArea .mainText .moreLink:hover {
+    color: rgba(0, 0, 0, .5);
+    text-decoration: none
+}
+
+.midContents .borderBox .borderBoxTextArea .moreTextArea {
+    display: none
+}
+
+.midContents .borderBox .borderBoxTextArea .likes a {
+    color: #000;
+    text-decoration: none;
+    display: inline-block;
+    font-size: .9em;
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .borderBoxTextArea .likes a:hover {
+    transform: translate3d(0, -3px, 0);
+    color: rgba(0, 0, 0, .5)
+}
+
+.midContents .borderBox .borderBoxTextArea .likes a i {
+    font-size: 1.4em;
+    margin-right: .1em
+}
+
+.midContents .borderBox .borderBoxTextArea .likes {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: .8em 0
+}
+
+.midContents .borderBox .borderBoxFooter {
+    padding-top: .8em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.midContents .borderBox .borderBoxFooter .commentSide span {
+    background-color: #f6f2e9;
+    font-size: .8em;
+    height: 2em;
+    width: 2em;
+    line-height: 2.2;
+    border-radius: 50%;
+    text-align: center;
+    display: inline-block;
+    margin-right: .4em;
+    color: #000
+}
+
+.midContents .borderBox .borderBoxFooter .commentSide {
+    color: var(--fontcolor);
+    font-size: .9em;
+    transition: .2s ease-in-out;
+    width: 55%
+}
+
+.midContents .borderBox .borderBoxFooter .commentSide:hover {
+    color: #000;
+    text-decoration: none
+}
+
+.midContents .borderBox .borderBoxFooter .counterText {
+    color: var(--fontcolor);
+    font-size: .9em;
+    display: inline-block;
+    margin: 0 .8em
+}
+
+.midContents .borderBox .borderBoxFooter .plusBtn {
+    display: inline-block;
+    border: 1px solid rgba(0, 0, 0, .2);
+    color: rgba(0, 0, 0, .5);
+    font-size: .8em;
+    padding: .2em .6em;
+    border-radius: 1.5em;
+    margin-left: .3em;
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .borderBoxFooter .plusBtn:hover {
+    color: #000;
+    border-color: #000;
+    text-decoration: none
+}
+
+.midContents .borderBox .borderBoxFooter .tooltipBtn {
+    background-color: rgba(32, 35, 51, .05);
+    display: inline-block;
+    color: #000;
+    border-radius: 1em;
+    font-size: .8em;
+    border: 1px solid transparent;
+    padding: .2em .8em;
+    transition: .2s ease-in-out;
+    cursor: pointer
+}
+
+.midContents .borderBox .borderBoxFooter .tooltipBtn:hover {
+    border-color: #000;
+    text-decoration: none
+}
+
+.midContents .borderBox .borderBoxFooter .dotsBtn {
+    color: grey;
+    font-size: .9em;
+    display: inline-block;
+    height: 2em;
+    width: 2em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2;
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .dotsBtnParent {
+    position: relative
+}
+
+.dotsBtnParent .dotsModal .editProfileLink {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    font-size: .9em;
+    transition: .2s ease-in-out;
+    padding: .5em 1em
+}
+
+.dotsBtnParent .dotsModal .editProfileLink i {
+    font-size: 1.1em
+}
+
+.dotsBtnParent .dotsModal .editProfileLink.editProfileLinkTwo {
+    display: flex;
+    margin-top: .5em;
+    align-items: baseline
+}
+
+.dotsBtnParent .dotsModal .editProfileLink:hover {
+    background-color: rgba(32, 35, 51, .07)
+}
+
+.dotsBtnParent .dotsModal {
+    border-radius: 1em;
+    padding: .8em 0;
+    width: 330px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 35px;
+    right: 0;
+    background-color: #fff;
+    display: none;
+    z-index: 1000;
+    text-align: left
+}
+
+.dotsBtnParent .dotsModal.show {
+    display: block
+}
+
+.dotsBtnParent .dotsModal .smText {
+    font-size: .9em;
+    color: var(--fontcolor);
+    line-height: 1.3
+}
+
+.dotsBtnParent .dotsModal .switch {
+    margin-left: 2em
+}
+
+.midContents .borderBox .borderBoxFooter .dotsBtn:hover {
+    background-color: #ffffff
+}
+
+.midContents .borderBox .hideCommentArea {
+    margin-top: .5em;
+    display: none
+}
+
+.midContents .borderBox .hideCommentArea textarea {
+    width: 100%;
+    resize: none;
+    border-radius: .4em;
+    padding: .5em 1.5em;
+    border: 1px solid rgba(0, 0, 0, .2)
+}
+
+.midContents .borderBox .hideCommentArea .discover {
+    background-color: #ffffff;
+    padding: .8em 1.5em;
+    border-radius: .5em;
+    font-size: .9em;
+    color: rgba(0, 0, 0, .7);
+    cursor: pointer
+}
+
+.midContents .borderBox .hideCommentArea .discover:hover span {
+    color: #000
+}
+
+.midContents .borderBox .hideCommentArea .discover span {
+    font-weight: 700;
+    color: rgba(0, 0, 0, .2);
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .hideCommentArea .cancelBtn {
+    background-color: #f6f2e9;
+    color: #000;
+    font-size: .9em;
+    padding: .6em 1.2em;
+    font-weight: 600;
+    display: inline-block;
+    border-radius: 1.5em;
+    transition: .2s ease-in-out
+}
+
+.midContents .borderBox .hideCommentArea .cancelBtn:hover {
+    background-color: #f0e5cd;
+    text-decoration: none
+}
+
+.midContents .borderBox .hideCommentArea .sendBtn {
+    font-size: .9em;
+    padding: .6em 1.2em;
+    background-color: #e0e1e4;
+    color: var(--fontcolor);
+    border: none;
+    border-radius: 1.5em;
+    pointer-events: none
+}
+
+.midContents .borderBox .hideCommentArea .hideCommentAreaFooter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5em
+}
+
+.rightContents {
+    padding-left: 3em;
+    width: 25%;
+    position: fixed;
+    right: 15px;
+    top: 80px
+}
+
+.rightContents .grayText {
+    color: var(--fontcolor);
+    font-size: .9em;
+    letter-spacing: 1px
+}
+
+.rightContents .grayText a {
+    display: inline-block;
+    color: var(--fontcolor);
+    text-decoration: none
+}
+
+.commonLink {
+    color: #000;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+    margin: .7em 0
+}
+
+.commonLink .imageContents {
+    display: flex
+}
+
+.commonLink .imageContents img {
+    width: 70px;
+    height: 70px;
+    border-radius: .2em
+}
+
+.commonLink .lightText {
+    color: var(--fontcolor);
+    font-size: .8em;
+    font-weight: 200;
+    margin-top: .5em
+}
+
+.commonLink .lightText i {
+    margin-right: .3em
+}
+
+.footerMenu {
+    display: none
+}
+
+.commonModals .modal-header {
+    position: relative;
+    border-bottom: none
+}
+
+.commonModals .modal-content {
+    border-radius: 1.5em;
+    border: none;
+    padding: .5em;
+    padding-bottom: 1.5em;
+    text-align: center
+}
+
+.commonModals .modal-title {
+    position: absolute;
+    top: 45px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: GT-Super-Display-Super;
+    font-size: 1.5em
+}
+
+.commonModals .modalCard i {
+    margin-bottom: 12px;
+    width: 44px;
+    height: 44px;
+    line-height: 2.7;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(32, 35, 51, .07)
+}
+
+.commonModals .modalCard .modalSubHeading {
+    color: #202333;
+    font-weight: 700
+}
+
+.commonModals .modalCard .lighGrayText {
+    font-size: .9em
+}
+
+.yellowBtn {
+    background-color: #ffd21f;
+    color: #000;
+    display: inline-block;
+    padding: .6em 1.4em;
+    font-weight: 700;
+    border-radius: 1.5em;
+    transition: .2s ease-in-out
+}
+
+.yellowBtn:hover {
+    background-color: #ffdc60;
+    text-decoration: none;
+    opacity: .7;
+    color: #000
+}
+
+.grayLink {
+    color: var(--fontcolor);
+    font-weight: 700;
+    transition: .2s ease-in-out;
+    display: inline-block
+}
+
+.grayLink:hover {
+    text-decoration: none;
+    color: #000
+}
+
+.commonModals .modal-title i {
+    color: #32b343;
+    font-size: 1.5em
+}
+
+#LoginDialog .modal-content {
+    width: 70%;
+    margin: auto
+}
+
+#CommentsModal .modal-content {
+    width: 70%;
+    margin: auto
+}
+
+#phoneLoginModal .modal-content {
+    width: 70%;
+    margin: auto
+}
+
+#exampleModalCenterThree .modal-content {
+    width: 70%;
+    margin: auto
+}
+
+#exampleModalCenterFive .modal-content {
+    width: 70%;
+    margin: auto
+}
+
+#exampleModalCenterSix .modal-content {
+    width: 80%;
+    margin: auto;
+    border-radius: .7em
+}
+
+#exampleModalCenterSix .likeModalHeading {
+    font-size: 1.2em;
+    color: #000;
+    font-weight: 700;
+    font-family: GT-Super-Display-Super
+}
+
+#exampleModalCenterSix .modal-title {
+    top: 10px;
+    height: 1.6em;
+    width: 1.6em;
+    background-color: rgba(0, 0, 0, .06);
+    border-radius: 50%
+}
+
+#exampleModalCenterSix .modal-title i {
+    color: #000;
+    font-size: .8em
+}
+
+#exampleModalCenterSix .likeModalButtons .likeModalButton {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: .7em 1.3em;
+    border-radius: .8em;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 10%);
+    display: block;
+    width: 100%;
+    font-weight: 700;
+    margin-top: .8em;
+    transition: .2s ease-in-out
+}
+
+#exampleModalCenterSix .likeModalButtons .likeModalButton i {
+    float: right;
+    margin-top: 4px;
+    color: #067aff;
+    display: none
+}
+
+#exampleModalCenterSix .likeModalButtons .likeModalButton:active {
+    color: #067aff;
+    background: rgba(6, 122, 255, .07);
+    border: 1px solid rgba(6, 122, 255, .15);
+    outline: 0
+}
+
+#exampleModalCenterSix .likeModalButtons .likeModalButton:focus {
+    color: #067aff;
+    background: rgba(6, 122, 255, .07);
+    border: 1px solid rgba(6, 122, 255, .15);
+    outline: 0
+}
+
+#exampleModalCenterSix .likeModalButtons .likeModalButton:hover {
+    box-shadow: 0 5px 10px rgb(0 0 0 / 10%)
+}
+
+#exampleModalCenterFive .fa-heart {
+    color: red
+}
+
+#exampleModalCenterSix .rateBtn {
+    opacity: 1;
+    background-color: #e0e1e4;
+    color: rgba(32, 35, 51, .3);
+    pointer-events: none;
+    padding: .7em 1.5em;
+    border-radius: 2em;
+    border: none;
+    margin-top: .5em;
+    font-weight: 700
+}
+
+.commonModals .askModalHeading {
+    color: #000;
+    font-size: 1.3em;
+    margin-top: 1.5em
+}
+
+.socialLink {
+    height: 2.2em;
+    width: 2.2em;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.2;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    font-size: 1.1em;
+    margin-left: .4em;
+    transition: .2s ease-in-out
+}
+
+.commonModals .socialLink:hover {
+    opacity: .7
+}
+
+.commonModals .socialLink.wSign {
+    background-color: #4c6c91
+}
+
+.commonModals .socialLink.facebookIcon {
+    background-color: #4267b2
+}
+
+.commonModals .socialLink.dotsIcon {
+    border: 1px solid #202333;
+    color: #202333;
+    opacity: .15
+}
+
+#TagsModal .modal-content {
+    border-radius: .8em;
+    border: none;
+    padding: .5em .8em
+}
+
+#TagsModal .modal-title {
+    color: var(--fontcolor);
+    font-weight: 800
+}
+
+#TagsModal .modal-header {
+    border-bottom: none;
+    padding-bottom: 0
+}
+
+#TagsModal .postLink {
+    font-weight: 600;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: .7em 1.4em;
+    border-radius: .7em;
+    transition: .2s ease-in-out
+}
+
+#TagsModal .postLink:hover {
+    background-color: rgba(32, 35, 51, .1);
+    text-decoration: none
+}
+
+#shareDialog .modal-title {
+    top: 10px;
+    font-size: 1.3em
+}
+
+#shareDialog .modal-body {
+    text-align: left
+}
+
+#shareDialog .shareMediaLink {
+    background: rgba(6, 122, 255, .07);
+    color: #067aff;
+    display: inline-block;
+    height: 44px;
+    width: 44px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 2.8;
+    margin-right: .3em;
+    transition: .2s ease-in-out
+}
+
+#shareDialog .shareMediaLink:hover {
+    background: rgba(6, 122, 255, .2)
+}
+
+#shareDialog .commonButton {
+    padding: .6em 1em;
+    font-size: 1em;
+    font-weight: 800
+}
+
+#shareDialog .loginPageLink {
+    display: block;
+    width: 100%;
+    padding: .6em 1.4em;
+    border-radius: .4em;
+    transition: .2s ease-in-out;
+    color: #000;
+    font-weight: 800;
+    margin-top: 2.5em;
+    transition: .2s ease-in-out
+}
+
+#shareDialog .loginPageLink:hover {
+    background-color: #ffffff;
+    text-decoration: none
+}
+
+#shareDialog .shareModalText {
+    color: var(--fontcolor);
+    letter-spacing: 1px;
+    font-size: .8em;
+    margin-top: 1em
+}
+
+#shareDialog .shareModalSearchArea {
+    position: relative;
+    margin-top: 1em
+}
+
+#shareDialog .shareModalSearchArea input {
+    width: 100%;
+    padding: .6em 1em;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: .8em;
+    outline: 0
+}
+
+#shareDialog .shareModalSearchArea input:focus {
+    border-color: #000
+}
+
+#shareDialog .shareModalSearchArea i {
+    position: absolute;
+    right: 12px;
+    top: 15px;
+    color: rgba(0, 0, 0, .1)
+}
+
+#exampleModalCenterEight .modal-title {
+    top: 30px;
+    left: 30px
+}
+
+#exampleModalCenterEight .modal-title i {
+    color: var(--themeColor)
+}
+
+#exampleModalCenterEight .modal-content {
+    border-radius: .8em
+}
+
+#exampleModalCenterEight .downloadModalHeading {
+    color: #000;
+    font-weight: 800;
+    font-size: 1.2em;
+    font-family: GT-Super-Display-Super;
+    margin-top: .4em
+}
+
+#exampleModalCenterEight .downLoadModalText {
+    color: var(--fontcolor);
+    font-size: .9em;
+    margin-top: .5em
+}
+
+#exampleModalCenterEight .downLoadModalMediaLinks {
+    display: flex;
+    margin-top: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+#exampleModalCenterEight .downLoadModalMediaLinks .downLoadModalMediaLink {
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: .5em
+}
+
+#exampleModalCenterEight .dheaderInputownLoadModalMediaLinks .downLoadModalMediaLink img {
+    width: 150px;
+}
+
+#exampleModalCenterEight .downLoadModalMediaLinks .downLoadModalMediaLink .qrCodeImg {
+    height: 80px;
+    width: 80px;
+}
+
+.commonHeading {
+    font-family: GT-Super-Display-Super;
+    font-size: 1.8em
+}
+
+.curious .midContents .curiousTabs .curiousTab {
+    color: var(--fontcolor);
+    font-weight: 800;
+    display: inline-block;
+    text-decoration: #000;
+    margin-right: 1em;
+    margin-bottom: .5em;
+    background-color: transparent;
+    padding: .3em .7em;
+    transition: .2s ease-in-out
+}
+
+.curious .midContents .curiousTabs .curiousTab.active,
+.curious .midContents .curiousTabs .curiousTab:hover {
+    background-color: #ffffff;
+    border-radius: 1.5em;
+    color: #000
+}
+
+.midContents .borderBox.oddBorderBox {
+    padding: 0
+}
+
+.midContents .borderBox.oddBorderBox .borderBoxBody {
+    margin-top: 0;
+    display: flex;
+    align-items: flex-end;
+    background-color: violet;
+    background-image: unset
+}
+
+.curious .midContents .borderBox.oddBorderBox:nth-of-type(2) .borderBoxBody {
+    background-color: #90ee90
+}
+
+.curious .midContents .borderBox.oddBorderBox:nth-of-type(2) .borderBoxBody {
+    background-color: #db7093
+}
+
+.midContents .borderBox.oddBorderBox .borderBoxHeader {
+    padding: 0 1.2em
+}
+
+.midContents .borderBox.oddBorderBox .addBtn {
+    right: 15px
+}
+
+.midContents .borderBox.oddBorderBox .borderBoxTextArea {
+    padding: 1.2em
+}
+
+.midContents .bgHeading {
+    font-family: GT-Super-Display-Super;
+    color: #fff;
+    font-size: 1.5em
+}
+
+.midContents .borderBox .hoverBtn.black {
+    color: #000
+}
+
+.midContents .communitiesParent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: .2s ease-in-out;
+    padding: .5em;
+    border-radius: 1em;
+    margin-bottom: .5em
+}
+
+.midContents .communitiesParent:hover {
+    background-color: #ffffff
+}
+
+.midContents .communitiesContents {
+    display: flex;
+    text-decoration: none;
+    width: 84%
+}
+
+.midContents .communitiesContents .communitiesHeading {
+    font-weight: 600;
+    color: #000
+}
+
+.commonButton {
+    display: inline-block;
+    background-color: #f6f2e9;
+    color: #000;
+    padding: .4em 1em;
+    border-radius: 1.5em;
+    font-size: .9em;
+    transition: .2s ease-in-out;
+    margin-top: .5em
+}
+
+.commonButton i {
+    margin-right: .3em
+}
+
+.commonButton:hover {
+    background: #f0e5cd;
+    text-decoration: none;
+    color: #000
+}
+
+.midContents .communitiesText {
+    color: #707070;
+    font-size: .9em
+}
+
+.midContents .communitiesContents .participants {
+    color: var(--fontcolor);
+    margin-top: .3em;
+    font-size: .9em
+}
+
+.midContents .communitiesContents .communitiesImg {
+    height: 65px;
+    width: 65px;
+    border-radius: 1.2em;
+    margin-right: 1em
+}
+
+.midContents .communitiesParent.peopleCommunities .communitiesContents {
+    width: 65%
+}
+
+.midContents .communitiesParent.peopleCommunities .communitiesText {
+    line-height: 1.2
+}
+
+.midContents .communitiesParent.peopleCommunities .communitiesImg {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%
+}
+
+.midContents .communitiesParent.peopleCommunities .hoverBtn.black {
+    color: #000;
+    border-color: rgba(0, 0, 0, .1);
+    border-radius: .3em
+}
+
+.midContents .communitiesParent.peopleCommunities:hover {
+    background-color: unset
+}
+
+.midContents .topicCard {
+    background-image: url(../img/user-card-img.png);
+    background-position: center;
+    background-size: cover;
+    border-radius: 1em;
+    overflow: hidden;
+    padding: 5em 1em 1em 1em;
+    margin-bottom: 1.3em
+}
+
+.midContents .topicCard .topicCardHeading {
+    color: #fff;
+    font-size: 1.5em;
+    font-family: GT-Super-Display-Super
+}
+
+.midContents .row>.col-lg-6:nth-of-type(2) .topicCard {
+    background-color: pink;
+    background-image: unset
+}
+
+.midContents .row>.col-lg-6:nth-of-type(3) .topicCard {
+    background-color: violet;
+    background-image: unset
+}
+
+.midContents .topicCard .topCardLink {
+    text-decoration: none;
+    color: #fff;
+    padding: .5em 1em;
+    display: inline-block;
+    font-size: .9em;
+    border-radius: 1.5em;
+    margin-left: -1em;
+    transition: .2s ease-in-out
+}
+
+.midContents .topicCard .topCardLink i {
+    margin-right: .3em
+}
+
+.midContents .topicCard .topCardLink:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.midContents .borderBox.borderBoxThree {
+    padding: 0
+}
+
+.midContents .borderBox.borderBoxThree .borderBoxBody {
+    margin: 0;
+    padding: 5em 1em 1em 1em
+}
+
+.midContents .borderBox.borderBoxThree .userImg {
+    height: 25px;
+    width: 25px;
+    margin-right: .3em
+}
+
+.midContents .borderBox.borderBoxThree .hoverImageParent {
+    display: inline-block;
+    margin-top: 1em
+}
+
+.midContents .borderBox.borderBoxThree .askLink {
+    display: inline-block;
+    font-size: .9em;
+    color: rgba(255, 255, 255, .5);
+    text-decoration: none;
+    margin-right: .5em
+}
+
+.midContents .borderBox.borderBoxThree .userName {
+    font-weight: 300;
+    color: #fff;
+    font-size: .9em
+}
+
+.midContents .borderBox.borderBoxThree .borderBoxFooter {
+    padding: 1em
+}
+
+.midContents .borderBox.borderBoxThree .borderBoxTextArea {
+    padding: 1em
+}
+
+.lighGrayText {
+    color: var(--fontcolor);
+    margin-top: 1em
+}
+
+.midContents .communitiesTopHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1.5em
+}
+
+.midContents .commonButton.moreBtn {
+    width: 100%;
+    padding: .8em;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1em
+}
+
+.midContents .profileBox {
+    background-color: #f6f2e9;
+    border-radius: 28px;
+    padding: 2em;
+    text-align: center
+}
+
+.midContents .profileBox .profileHeading {
+    font-family: GT-Super-Display-Super;
+    font-size: 1.5em;
+    position: relative;
+    padding-bottom: 1em
+}
+
+.midContents .profileBox .profileHeading::after {
+    content: "";
+    background-color: rgba(0, 0, 0, .1);
+    width: 175px;
+    height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+.midContents .profileBox .multiButtons .profileButton {
+    box-shadow: 0 6px 18px rgb(0 0 0 / 8%), 0 1px 4px rgb(0 0 0 / 4%);
+    align-items: center;
+    background: #fff;
+    font-weight: 700;
+    padding: .6em 1em;
+    color: #000;
+    border: 1px solid transparent;
+    border-radius: 2em;
+    margin-right: 1em;
+    margin-bottom: .8em;
+    display: inline-block
+}
+
+.midContents .profileBox .multiButtons .profileButton:focus {
+    color: #067aff;
+    background: rgba(6, 122, 255, .07);
+    border: 1px solid rgba(6, 122, 255, .15);
+    outline: 0
+}
+
+.unClickButton {
+    opacity: 1;
+    background-color: #e0e1e4;
+    color: rgba(32, 35, 51, .3);
+    pointer-events: none;
+    padding: .7em 1.5em;
+    border-radius: 2em;
+    border: none;
+    margin-top: .5em;
+    font-weight: 700
+}
+
+body.loginPage {
+    background-image: url(../img/login-bg.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 85vh;
+    background-blend-mode: overlay;
+    background-color: rgba(0, 0, 0, .5)
+}
+
+.myForm {
+    background-color: #fff;
+    border-radius: 1.2em;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    padding: 1.5em;
+    width: 100%;
+    max-width: 350px;
+    margin: 2em auto;
+    margin-top: 5em;
+    text-align: center
+}
+
+.myForm .brandLogo {
+    font-size: 2em;
+    font-weight: 700
+}
+
+.myForm .formHeading {
+    font-size: 1.2em;
+    line-height: 1.1;
+    margin-top: .6em
+}
+
+.myForm .formInput {
+    padding: .7em 1em;
+    border-radius: .4em;
+    border: 2px solid #e0e1e4;
+    width: 100%;
+    margin-top: 1.5em;
+    outline: 0
+}
+
+.myForm .rememberLink {
+    color: #04b;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    font-size: .9em;
+    font-weight: 600;
+    margin-top: .5em;
+    transition: .2s ease-in-out
+}
+
+.myForm .rememberLink:hover {
+    color: #c00
+}
+
+.myForm .yellowBtn {
+    border: none;
+    border-radius: .4em;
+    width: 100%;
+    margin-top: 1.3em
+}
+
+.myForm .yellowBtn.whiteBtn {
+    background-color: #fff;
+    margin-top: 1em;
+    border: 1px solid #e0e1e4
+}
+
+.myForm .grayLink {
+    font-weight: 400;
+    font-size: .9em;
+    margin-top: 1.5em
+}
+
+.myForm .socialLinks {
+    text-align: left;
+    margin-top: 1em
+}
+
+.myForm .socialLinks .socialLink {
+    display: inline-block;
+    text-decoration: none;
+    margin-right: 1.5em;
+    color: #707070;
+    font-weight: 700;
+    font-size: .9em
+}
+
+.loginPage .formText {
+    color: rgba(255, 255, 255, .8);
+    text-align: center;
+    margin-top: -1em
+}
+
+.loginPageFooterLinks {
+    padding: 0 1em
+}
+
+.loginPageFooterLinks span {
+    color: rgba(255, 255, 255, .8);
+    font-size: .9em;
+    display: inline-block
+}
+
+.loginPageFooterLinks .brownHoverLink {
+    color: rgba(255, 255, 255, .8);
+    text-decoration: none;
+    font-size: .9em;
+    display: inline-block;
+    transition: .2s ease-in-out
+}
+
+.loginPageFooterLinks .brownHoverLink:hover {
+    color: #c00
+}
+
+.loginPageFooterLinks .brownHoverLink.boldLink {
+    color: #fff;
+    font-weight: 700
+}
+
+.blackText {
+    color: #000
+}
+
+.bgIcon {
+    margin-bottom: 12px;
+    width: 44px;
+    height: 44px;
+    line-height: 2.7;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(32, 35, 51, .07)
+}
+
+.subHeading {
+    font-size: 1.3em;
+    color: #000;
+    font-family: GT-Super-Display-Super
+}
+
+.leftContents {
+    text-align: center;
+    margin-top: 1.5em
+}
+
+.leftContents .blackText {
+    color: var(--fontcolor);
+    margin-top: .8em;
+    line-height: 1.3
+}
+
+.leftContents .commonButton {
+    padding: .6em 1em;
+    font-weight: 700;
+    font-size: 1em;
+    margin-top: .8em
+}
+
+.coverDownloader {
+    position: relative
+}
+
+.coverDownloader .downloadArea {
+    background-color: var(--fontcolor);
+    border-radius: .7em;
+    height: 220px;
+    cursor: pointer;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: .2s ease-in-out
+}
+
+.coverDownloader .downloadArea:hover {
+    background-color: #707070
+}
+
+.coverDownloader .downloadArea:hover .uploadCover {
+    display: block
+}
+
+.coverDownloader .downloadArea .uploadCover {
+    display: none
+}
+
+.coverDownloader .coverImage {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    position: relative;
+    margin-top: -5em;
+    margin-left: 1.2em;
+    display: block
+}
+
+.coverDownloader .coverImage i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff
+}
+
+.coverDownloader .descriptionLink {
+    background-color: rgba(32, 35, 51, .05);
+    color: var(--themeColor);
+    padding: .5em .8em;
+    font-size: .9em;
+    font-weight: 500;
+    border-radius: .6em;
+    display: inline-block;
+    text-decoration: none
+}
+
+.coverDownloader .donloaderDropdown .btn-secondary {
+    background-color: #fff;
+    outline: 0!important;
+    box-shadow: none!important;
+    border: none;
+    color: var(--fontcolor)
+}
+
+.coverDownloader .userInfo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between
+}
+
+.dropdown .dropdown-menu {
+    border: none;
+    border-radius: .6em;
+    box-shadow: 0 0 10px rgba(32, 35, 51, .1)
+}
+
+.blueBtn {
+    width: 100%;
+    display: block;
+    padding: .7em;
+    border-radius: 30px;
+    background-color: var(--themeColor);
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    opacity: .9;
+    transition: .2s ease-in-out
+}
+
+.blueBtn:hover {
+    text-decoration: none;
+    opacity: 1;
+    color: #fff
+}
+
+.downlaodCover input {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: .4em;
+    padding: .6em 1em;
+    outline: 0;
+    width: 100%
+}
+
+.downlaodCover {
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    border-radius: .7em;
+    padding: 1em;
+    position: absolute;
+    right: 0;
+    bottom: -35px;
+    background: #fff
+}
+
+#addCoverdownload {
+    display: none
+}
+
+.downlaodCover .downloadCoverClosedBtn {
+    font-size: 1.2em;
+    color: var(--fontcolor);
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer
+}
+
+.downlaodCover .commonHeading {
+    font-size: 1.4em;
+    margin-bottom: .7em
+}
+
+.profileAfter .useractiveImg .activePoint {
+    height: 9px;
+    width: 9px;
+    background-color: red;
+    display: inline-block;
+    border-radius: 50%;
+    position: absolute;
+    right: 5px;
+    top: -3px;
+    border: 1px solid #fff
+}
+
+.profileAfter .useractiveImg {
+    position: relative
+}
+
+.profileAfter .useractiveImg img {
+    height: 22px;
+    vertical-align: sub;
+    margin-right: .4em
+}
+
+#exampleModalCenter .yellowBtn {
+    background-color: #043c2d;
+    color: #fff
+}
+
+#exampleModalCenter .yellowBtn i {
+    vertical-align: middle;
+    margin-right: .4em
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 20px
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 2px;
+    background-color: #fff;
+    -webkit-transition: .4s;
+    transition: .4s
+}
+
+input:checked+.slider {
+    background-color: var(--themeColor)
+}
+
+input:focus+.slider {
+    box-shadow: 0 0 1px #2196f3
+}
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(16px)
+}
+
+.slider.round {
+    border-radius: 50px
+}
+
+.slider.round:before {
+    border-radius: 50%
+}
+
+.editProfileArea .editProfileLink {
+    color: #000;
+    text-decoration: none;
+    display: block;
+    font-size: .9em;
+    transition: .2s ease-in-out;
+    padding: .5em 1em;
+    margin-bottom: .5em
+}
+
+.editProfileArea .editProfileLink.editProfileLinkTwo {
+    display: flex;
+    margin-top: .5em
+}
+
+.editProfileArea .editProfileLink:hover {
+    background-color: rgba(32, 35, 51, .07)
+}
+
+.editProfileBox .editProfileArea {
+    border-radius: 1em;
+    padding: .8em 0;
+    width: 280px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, .1);
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #fff;
+    display: none;
+    z-index: 100
+}
+
+.editProfileBox .editProfileArea.show {
+    display: block
+}
+
+.editProfileBox {
+    position: relative;
+    display: inline-block
+}
+
+.meetArea {
+    background-color: #f6f2e9;
+    border-radius: 28px;
+    padding: 24px;
+    margin-top: 20px;
+    padding-right: 0
+}
+
+.meetArea .mainText {
+    font-size: .9em;
+    color: var(--fontcolor)
+}
+
+.meetArea .meetHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 24px
+}
+
+.meetArea .mainText.black {
+    color: #000
+}
+
+.meetArea .bgIcon {
+    background-color: #fff
+}
+
+.meetArea .meetCard {
+    border-radius: 1em;
+    padding: 1em;
+    background-color: #fff;
+    z-index: 10000
+}
+
+.meetArea .meetCard .meetCardHeading {
+    font-weight: 700;
+    margin-bottom: .3em
+}
+
+.meetArea .meetCard .blueBtn {
+    padding: .4em 1em;
+    width: unset;
+    font-size: .9em;
+    font-weight: 400;
+    display: inline-block
+}
+
+.meetArea .owl-carousel .owl-next span {
+    position: absolute;
+    font-size: 2.3em;
+    right: -15px;
+    top: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    color: #000!important;
+    text-align: center;
+    line-height: 1.1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+}
+
+.meetArea .owl-carousel .owl-prev {
+    display: none!important
+}
+
+.customCirclePercent {
+    border: 5px solid #e5eaeb;
+    border-radius: 50%;
+    height: 55px;
+    width: 55px;
+    line-height: 2.8;
+    text-align: center;
+    color: #000;
+    font-weight: 700;
+    font-family: GT-Super-Display-Super
+}
+
+.owl-carousel.owl-theme .meetCard .blueBtn {
+    margin-top: 2em
+}
+
+.owl-carousel.owl-theme .meetCard .commonButton {
+    margin-top: 2em
+}
+
+#joinModal .commonHeading {
+    font-size: 1.6em
+}
+
+#joinModal .modal-content {
+    padding: 2em;
+    text-align: left
+}
+
+#joinModal .modal-body .mainText {
+    color: var(--fontcolor)
+}
+
+#joinModal .joinModalUserImg {
+    width: 55%;
+    position: relative;
+    cursor: pointer
+}
+
+#joinModal .joinModalUserImg:hover .fa-camera {
+    height: 100%;
+    width: 82%;
+    bottom: 0
+}
+
+#joinModal .joinModalUserImg img {
+    height: 100px;
+    border: 1px solid grey;
+    border-radius: 50%;
+    cursor: pointer
+}
+
+#joinModal .joinSubHeading {
+    font-size: 1.4em;
+    margin-bottom: 1.1em;
+    font-family: GT-Super-Display-Super
+}
+
+#joinModal .joinModalUser {
+    display: flex;
+    align-items: center
+}
+
+#joinModal .joinModalUser .fa-camera {
+    height: 2.2em;
+    width: 2.2em;
+    background-color: rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+    left: 40%;
+    transform: translateX(-50%);
+    bottom: 8px;
+    transition: 350ms ease-in-out
+}
+
+#joinModal .joinModalUser .smText {
+    font-size: .9em
+}
+
+.grayBtn {
+    background-color: rgba(32, 35, 51, .1);
+    color: #000;
+    padding: .6em 1em;
+    font-size: .9em;
+    font-weight: 500;
+    border-radius: .6em;
+    display: inline-block;
+    text-decoration: none;
+    margin-top: .6em;
+    transition: .2s ease-in-out
+}
+
+.grayBtn:hover {
+    background-color: rgba(32, 35, 51, .2);
+    text-decoration: none;
+    color: #000
+}
+
+#joinModal .joinInput {
+    width: 100%;
+    padding: .5em 1em;
+    border-radius: .4em;
+    border: 2px solid var(--fontcolor);
+    color: #000;
+    outline: 0
+}
+
+#joinModal .joinInputArea {
+    position: relative
+}
+
+#joinModal .joinInputArea .fa-times-circle {
+    font-size: 1.7em;
+    color: rgba(0, 0, 0, .3);
+    position: absolute;
+    right: 9px;
+    top: 8px;
+    cursor: pointer
+}
+
+#joinModal .grayText {
+    font-size: .9em;
+    margin-top: 1em;
+    color: var(--fontcolor)
+}
+
+#joinModal .yellowBtn {
+    width: 100%;
+    text-align: center;
+    border-radius: .5em;
+    margin-top: 1.2em;
+    padding: .6em 1.4em;
+    font-weight: 200
+}
+
+#joinModal .close {
+    position: absolute;
+    right: -15px;
+    top: -15px;
+    font-size: 1.9em
+}
+
+#askModal .modal-body {
+    text-align: left
+}
+
+.largeTextInput {
+    font-size: 1.5em;
+    width: 100%;
+    border: none;
+    font-family: GT-Super-Display-Super
+}
+
+#askModal .inputCheckBg {
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: .5em;
+    cursor: pointer
+}
+
+#askModal .colorChangers {
+    display: flex;
+    align-items: center;
+    margin-top: 2em
+}
+
+#askModal .colorChangers>.inputCheckBg:nth-of-type(1) {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .1)
+}
+
+#askModal .colorChangers>.inputCheckBg:nth-of-type(1) .lines {
+    display: none
+}
+
+#askModal .colorChangers>.inputCheckBg:nth-of-type(2) {
+    background: linear-gradient(#f3d7d5, #f3d7d5)
+}
+
+#askModal .colorChangers>.inputCheckBg:nth-of-type(3) {
+    background: linear-gradient(#f9d6b4, #f9d6b4)
+}
+
+#askModal .colorChangers>.inputCheckBg:nth-of-type(4) {
+    background: linear-gradient(#f0e8d7, #f0e8d7)
+}
+
+#askModal .colorChangers>.inputCheckBg:nth-of-type(5) {
+    background: linear-gradient(#c7e9e0, #c7e9e0)
+}
+
+#askModal .colorChangers>.inputCheckBg:nth-of-type(6) {
+    background: linear-gradient(#c7e9e0, #c7e9e0)
+}
+
+#askModal .colorChangers>.inputCheckBg:nth-of-type(7) {
+    background: linear-gradient(#e1daf0, #e1daf0)
+}
+
+#askModal .inputCheckBg .line {
+    height: 2px;
+    width: 20px;
+    background-color: #000
+}
+
+#askModal .inputCheckBg .line.sml {
+    width: 10px;
+    margin-top: .1em
+}
+
+#askModal .inputCheckBg .fa-check {
+    font-size: 1.2em
+}
+
+#askModal .askButtons .commonButton i {
+    margin-right: .4em
+}
+
+#askModal .askButtons .commonButton {
+    padding: .6em 1em;
+    margin-right: .5em
+}
+
+.UserImageDropdown .btn-secondary {
+    background-color: #fff;
+    border: none;
+    outline: 0!important;
+    box-shadow: none!important;
+    color: #000;
+    font-weight: 800
+}
+
+.UserImageDropdown .userDropdownImageButton {
+    position: relative;
+    margin-right: .3em
+}
+
+.UserImageDropdown .userDropdownImageButton i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff
+}
+
+.UserImageDropdown .userDropdownImageButton img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%
+}
+
+.UserImageDropdown .dropdown-menu {
+    width: 100%
+}
+
+.UserImageDropdown .dropdown-item {
+    font-weight: 800;
+    margin-bottom: .8em
+}
+
+.UserImageDropdown .dropdown-item .fa-check {
+    float: right;
+    margin-top: .3em
+}
+
+.UserImageDropdown .dropdown-item img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: .3em
+}
+
+#askModalTwo .modal-body {
+    text-align: left
+}
+
+.largeTextInput {
+    font-size: 1.5em;
+    width: 100%;
+    border: none;
+    outline: 0;
+    font-family: GT-Super-Display-Super
+}
+
+#askModalTwo .inputCheckBg {
+    height: 38px;
+    width: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: .5em;
+    cursor: pointer
+}
+
+#askModalTwo .colorChangers {
+    display: flex;
+    align-items: center;
+    margin-top: 2em
+}
+
+#askModalTwo .colorChangers>.inputCheckBg:nth-of-type(1) {
+    background-color: #fff;
+    border: 1px solid rgba(0, 0, 0, .1)
+}
+
+#askModalTwo .colorChangers>.inputCheckBg:nth-of-type(1) .lines {
+    display: none
+}
+
+#askModalTwo .colorChangers>.inputCheckBg:nth-of-type(2) {
+    background: linear-gradient(#f3d7d5, #f3d7d5)
+}
+
+#askModalTwo .colorChangers>.inputCheckBg:nth-of-type(3) {
+    background: linear-gradient(#f9d6b4, #f9d6b4)
+}
+
+#askModalTwo .colorChangers>.inputCheckBg:nth-of-type(4) {
+    background: linear-gradient(#f0e8d7, #f0e8d7)
+}
+
+#askModalTwo .colorChangers>.inputCheckBg:nth-of-type(5) {
+    background: linear-gradient(#c7e9e0, #c7e9e0)
+}
+
+#askModalTwo .colorChangers>.inputCheckBg:nth-of-type(6) {
+    background: linear-gradient(#c7e9e0, #c7e9e0)
+}
+
+#askModalTwo .colorChangers>.inputCheckBg:nth-of-type(7) {
+    background: linear-gradient(#e1daf0, #e1daf0)
+}
+
+#askModalTwo .inputCheckBg .line {
+    height: 2px;
+    width: 20px;
+    background-color: #000
+}
+
+#askModalTwo .inputCheckBg .line.sml {
+    width: 10px;
+    margin-top: .1em
+}
+
+#askModalTwo .inputCheckBg .fa-check {
+    font-size: 1.2em
+}
+
+#askModalTwo .askButtons .commonButton i {
+    margin-right: .4em
+}
+
+#askModalTwo .askButtons .commonButton {
+    padding: .6em 1em;
+    margin-right: .5em
+}
+
+.UserImageDropdown .btn-secondary {
+    background-color: #fff;
+    border: none;
+    outline: 0!important;
+    box-shadow: none!important;
+    color: #000;
+    font-weight: 800
+}
+
+.UserImageDropdown .userDropdownImageButton {
+    position: relative;
+    margin-right: .3em
+}
+
+.UserImageDropdown .userDropdownImageButton i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff
+}
+
+.UserImageDropdown .userDropdownImageButton img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%
+}
+
+.UserImageDropdown .dropdown-menu {
+    width: 100%
+}
+
+.UserImageDropdown .dropdown-item {
+    font-weight: 800;
+    margin-bottom: .8em
+}
+
+#askModalTwo .UserImageDropdown .dropdown-item .fa-check {
+    float: right;
+    margin-top: .3em
+}
+
+#askModalTwo .UserImageDropdown .dropdown-item img {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    margin-right: .3em
+}
+
+#askModalTwo .askTwoHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(32, 35, 51, .3);
+    margin: 1em -2em;
+    padding: 1em;
+    margin-top: 0;
+    padding-top: 0
+}
+
+#askModalTwo .UserImageDropdown .btn-secondary {
+    display: block;
+    width: 100%;
+    text-align: left
+}
+
+#askModalTwo #loginHrefLink {
+    color: #000;
+    display: inline-block;
+    text-decoration: none
+}
+
+#askModalTwo .UserImageDropdown .btn-secondary .fa-ellipsis-v {
+    float: right
+}
+
+#topicsModal .modal-content {
+    border-radius: .7em
+}
+
+#topicsModal .topicButton {
+    background-color: #fff;
+    color: #000;
+    border: none;
+    padding: .7em 1.3em;
+    border-radius: 40px;
+    box-shadow: 0 8px 24px rgb(0 0 0 / 12%), 0 1px 2px rgb(0 0 0 / 12%);
+    display: inline-block;
+    font-weight: 700;
+    margin-top: .8em;
+    transition: .2s ease-in-out;
+    margin-right: .5em
+}
+
+#topicsModal .topicButton:hover {
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgb(0 0 0 / 10%), 0 1px 2px rgb(0 0 0 / 10%)
+}
+
+#topicsModal .topicButton .topicButtonImage {
+    margin-right: .3em
+}
+
+.grayBtn.fixedModalButton {
+    position: fixed;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 80px;
+    padding: .7em 5em;
+    border-radius: 40px;
+    background: rgb(239 239 241);
+    color: #202333;
+    font-size: 1em;
+    transition: .2s ease-in-out
+}
+
+.grayBtn.fixedModalButton:hover {
+    background-color: grey
+}
+
+.close.oddButton {
+    position: absolute;
+    right: -35px;
+    top: 13px;
+    background-color: rgba(0, 0, 0, .3);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    height: 1.5em;
+    width: 1.5em;
+    padding: 0;
+    opacity: 1
+}
+
+.downlaodCover.downlaodCoverModal {
+    position: fixed;
+    bottom: 20px;
+    right: 50px;
+    z-index: 100;
+    display: none
+}
+
+#joinModalTwo .midContents {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.5em
+}
+
+#subscribeModal .midContents {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 1.5em
+}
+
+.grayBtn.fixedModalButton.blueModalBtn {
+    background-color: var(--themeColor);
+    color: #fff
+}
+
+.pageHeader .grayBtn {
+    padding: .4em .7em;
+    font-size: 1em;
+    line-height: 1.6;
+    margin-left: 1em;
+    border: none
+}
+
+#bellDropdown .dropdown-menu.show {
+    width: 300px;
+    left: -70px;
+    top: 60px;
+    padding: 0
+}
+
+#bellDropdown .bellModalHeader {
+    font-size: 1em;
+    font-weight: 700;
+    border-bottom: 1px solid rgba(0, 0, 0, .1);
+    padding: 1em;
+    text-align: center
+}
+
+#bellDropdown .grayHeading {
+    color: var(--fontcolor);
+    font-weight: 800;
+    font-size: 1.2em;
+    margin-top: 1em;
+    margin-bottom: .3em
+}
+
+#bellDropdown .grayText {
+    font-size: .9em;
+    line-height: 1.3;
+    color: var(--fontcolor)
+}
+
+#signoutModal .dropdown-item {
+    font-size: .9em
+}
+
+#signoutModal .dropdown-item i {
+    margin-right: .3em;
+    font-size: 1.4em;
+    vertical-align: middle
+}
+
+#signoutModal .dropdown-item .fa-sign-out-alt {
+    color: var(--fontcolor)
+}
+
+.#ffffffeader {
+    display: none
+}
+
+.profilePageLinks .profilePageLink {
+    color: var(--fontcolor);
+    font-weight: 800;
+    display: inline-block;
+    text-decoration: #000;
+    margin-right: 1em;
+    margin-bottom: .5em;
+    padding: .3em .7em;
+    transition: .2s ease-in-out
+}
+
+.profilePageLinks .profilePageLink:hover {
+    background-color: #ffffff;
+    border-radius: 1.5em;
+    color: #000
+}
+
+.profilePageLinks .profilePageLink.active {
+    background-color: #ffffff;
+    border-radius: 1.5em;
+    color: #000
+}
+
+.hurryContents {
+    text-align: center;
+    width: 100%;
+    max-width: 380px;
+    margin: 1em auto
+}
+
+.hurryContents .mainText {
+    color: var(--fontcolor);
+    margin-top: .7em
+}
+
+.profileLinkParent .menuLink.hideMenuLink {
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.profileLinkParent {
+    display: flex;
+    align-items: center
+}
+
+.profileLinkParent .menuLink.oddMenuLink {
+    width: 80%
+}
+
+.profileLinkParent .menuLink.hideMenuLink i {
+    margin-right: 0
+}
+
+.subLinks {
+    padding: 1em 1em 1em 2em;
+    display: none
+}
+
+.subLinks.show {
+    display: block
+}
+
+.subLinks .subLink {
+    color: var(--fontcolor);
+    display: block;
+    padding: .4em 1em;
+    border-radius: .5em;
+    transition: .2s ease-in-out
+}
+
+.subLinks .subLink:hover {
+    background-color: rgba(32, 35, 51, .1);
+    text-decoration: none
+}
+
+#footerProfileModal {
+    overflow-y: scroll
+}
+
+#footerProfileModal .modal-content {
+    background-color: #ffffff;
+    text-align: left;
+    margin-top: 2em;
+    border-radius: 2.2em 2.2em 0 0;
+    padding: 0;
+    padding-bottom: 2em
+}
+
+#footerProfileModal .userImageSide {
+    position: relative;
+    margin-right: 1em
+}
+
+#footerProfileModal .userImageSide .activeUserPoint {
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    right: 0;
+    top: 0
+}
+
+#footerProfileModal .userImageSide img {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%
+}
+
+#footerProfileModal .roundBorderBox {
+    border-radius: 1.4em;
+    padding: 1em;
+    background-color: #fff;
+    margin-bottom: .8em;
+    box-shadow: 0 0 10px rgba(32, 35, 51, .1)
+}
+
+#footerProfileModal .userLoginArea {
+    display: flex;
+    align-items: center
+}
+
+#footerProfileModal .userLoginArea .loginUserName {
+    font-family: GT-Super-Display-Super;
+    font-size: 1.2em;
+    color: #000
+}
+
+#footerProfileModal .roundBorderBox.oddBox {
+    position: relative
+}
+
+#footerProfileModal #profileModalClosedBtn {
+    position: absolute;
+    right: 20px;
+    top: 30px;
+    color: var(--fontcolor)
+}
+
+#footerProfileModal .userLoginArea .smText {
+    color: var(--fontcolor)
+}
+
+#footerProfileModal .profileModalLink {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin-bottom: 1.2em;
+    font-size: 1.2em
+}
+
+#footerProfileModal .profileModalLink i {
+    margin-right: .8em
+}
+
+#footerProfileModal .grayText {
+    font-size: 1.2em;
+    color: var(--fontcolor)
+}
+
+#footerProfileModal .menuSide {
+    display: block;
+    width: 100%;
+    padding: 0;
+    position: unset
+}
+
+#footerProfileModal .menuSide .footerLinksTwo .footerLink {
+    display: block;
+    margin-bottom: 1em
+}
+
+#footerProfileModal .menuSide .footerLink {
+    font-size: 1.2em
+}
+
+#footerProfileModal .menuSide .socialMediaLink {
+    height: 34px;
+    width: 34px;
+    line-height: 3
+}
+
+#footerProfileModal .menuSide .socialMediaLink i {
+    font-size: 1.4em
+}
+
+#footerProfileModal .downloadAreaImg {
+    height: 45px;
+    width: 45px;
+    border-radius: 1em;
+    margin-right: 1em
+}
+
+#footerProfileModal .downloadArea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 1em;
+    margin: 1.5em 0;
+    border-radius: .7em
+}
+
+#footerProfileModal .downloadArea .btn-primary {
+    font-size: .9em;
+    border-radius: 30px
+}
+.logo{
+    font-size: 2em !important;
+}
+.mainTextTitle{
+    font-size: 1.9rem;
+}
+.storyContainerDiv{
+    min-height: 25vh !important;
+}
+.horizontalScroll {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+}
+@media (max-width:768px) {
+    .mainTextTitle{
+        font-size: 1.4rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+    }
+    .replyTo{
+        background: #817cfe;
+        border-radius: 10px;
+        padding: 0 10px;
+        color: white !important;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        line-clamp: 1;
+        -webkit-box-orient: vertical;
+        width: 43% !important;
+        font-size: 11px !important;
+    }
+    .storyContainerDiv{
+        min-height: 15vh !important;
+    }
+    body {
+        font-size: .8em;
+        background-color: #ffffff
+    }
+    .communitiesBody {
+        background-color: #fff
+    }
+    .menuSide,
+    .pageHeader,
+    .rightContents {
+        display: none
+    }
+    .midContents {
+        width: 100%;
+        margin-left: 0
+    }
+    .midContents .borderBox .userCard {
+        left: 0
+    }
+    .midContents .borderBox .userImg {
+        margin-right: 4em
+    }
+    .midContents .borderBox .addBtn {
+        right: 0;
+        top: 50px
+    }
+    .midContents .borderBox .borderBoxFooter .commentSide {
+        width: 32%
+    }
+    .footerMenu {
+        background-color: #fff;
+        box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        height: 80px;
+        right: 0;
+        padding-bottom: 1.3em;
+        z-index: 100;
+    }
+    .footerMenu .footerLinks {
+        display: flex;
+        justify-content: space-between;
+        align-items: center
+    }
+    .footerMenu .footerLink {
+        color: #707070;
+        width: 20%;
+        text-decoration: none;
+        text-align: center;
+        height: 44px;
+        text-align: center;
+        display: inline-block
+    }
+    .footerMenu .footerLink i {
+        font-size: 2em;
+        padding: .4em;
+        margin-bottom: .2em;
+        border-radius: .5em
+    }
+
+    .footerMenu .footerLink .footerMenuText {
+        margin-top: -10px;
+    }
+
+    .footerMenu .footerLink.active i {
+        /*
+        background-color: #edf6ff;
+        */
+        color: #067aff
+    }
+    .footerMenu .footerLink.active .footerMenuText {
+        color: #067aff
+    }
+    #CommentsModal .modal-content,
+    #LoginDialog .modal-content,
+    #TagsModal .modal-content,
+    #exampleModalCenterEight .modal-content,
+    #exampleModalCenterFive .modal-content,
+    #exampleModalCenterSix .modal-content,
+    #exampleModalCenterThree .modal-content,
+    #phoneLoginModal .modal-content,
+    #shareDialog .modal-content {
+        width: 100%;
+        margin: auto;
+        position: absolute;
+        bottom: -16px;
+        border-radius: 1em 1em 0 0
+    }
+    #CommentsModal,
+    #LoginDialog,
+    #TagsModal .modal-content,
+    #exampleModalCenterEight .modal-content,
+    #exampleModalCenterFive .modal-content,
+    #exampleModalCenterSix .modal-content #exampleModalCenter,
+    #exampleModalCenterThree .modal-content,
+    #phoneLoginModal,
+    #shareDialog .modal-content {
+        padding-right: 0!important
+    }
+    .commonModals .modalCard {
+        margin-top: 2em
+    }
+    #TagsModal .modal-dialog {
+        margin: 0
+    }
+    .modal.commonModals {
+        padding-right: 0!important
+    }
+    .modal.commonModals.fade {
+        padding-left: 0!important
+    }
+    .modal.commonModals.fade .modal-dialog {
+        margin: 0!important
+    }
+    .commonModals .modal-content {
+        border-radius: 0
+    }
+    .coverDownloader .coverImage {
+        margin-top: -5em
+    }
+    .userInfoBtn{
+        font-size: 0.5rem;
+    }
+    .coverDownloader .downloadArea{
+        height: 120px;
+    }
+    .coverDownloader .coverDownloaderBody {
+        background: #fff;
+        margin-top: -1em;
+        border-radius: 1em 1em 0 0;
+        padding: 1em
+    }
+    .meetContents {
+        display: flex;
+        margin-bottom: 1em
+    }
+    .meetContents .bgIcon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        line-height: unset;
+        width: 50px;
+        margin-right: 1em
+    }
+    #joinModal .joinModalUser {
+        display: block;
+        text-align: center
+    }
+    #joinModal .joinModalUserImg {
+        margin: 1em auto
+    }
+    #joinModal .joinModalUser .fa-camera {
+        left: 50%
+    }
+    #joinModal .joinModalUserImg:hover .fa-camera {
+        width: 60%
+    }
+    #joinModal .joinSubHeading {
+        text-align: center
+    }
+    #askModal .modal-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: -15px
+    }
+    #askModalTwo .modal-content {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: -15px
+    }
+    .close.oddButton {
+        position: unset
+    }
+    .midContents .communitiesContents {
+        width: 80%
+    }
+    .midContents .communitiesContents .communitiesImg {
+        margin-bottom: 1em
+    }
+    .pageContents {
+        margin-top: 0
+    }
+    .mobileHeader {
+        display: flex;
+        padding: 1.2em 1em;
+        text-align: center;
+        background-color: #ffffff
+    }
+    .bgIcon {
+        line-height: 3.7
+    }
+    .midContents .borderBox {
+        background-color: #fff
+    }
+    .midContents .borderBox .borderBoxBody {
+        min-height: 14vh
+    }
+    .logo{
+        font-size: 1.5em !important;
+    }
+    .dotsBtnParent .dotsModal {
+        position: fixed;
+        width: 100%;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: unset;
+        border-radius: 1.6em 1.6em 0 0;
+        padding: 1.5em 0
+    }
+}
+
+@media (max-width:330px) {
+    .midContents .borderBox .borderBoxFooter {
+        display: block
+    }
+    .midContents .borderBox .borderBoxFooter .commentSide {
+        width: 100%;
+        margin-bottom: 1em
+    }
+    .footerMenu .footerLink {
+        width: 30%
+    }
+    .midContents .borderBox .addBtn {
+        top: 10px
+    }
+}

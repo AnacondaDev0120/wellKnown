@@ -1,0 +1,32 @@
+{
+    "theme_color": "#817CFE",
+    "background_color": "#817CFE",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name": "FableFrog",
+    "short_name": "FableFrog",
+    "description": "Fable Frog is a application made for users to be able to post audios and be able to comment audio posts while interacting with stories from all around the world.",
+    "icons": [
+        {
+            "src": "img/icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-256x256.png",
+            "sizes": "256x256",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-384x384.png",
+            "sizes": "384x384",
+            "type": "image/png"
+        },
+        {
+            "src": "img/icon-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

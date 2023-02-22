@@ -1,0 +1,21 @@
+[11-Mar-2022 11:49:59 America/New_York] PHP Warning:  Undefined variable $seconds in /home/fablhiyo/app.fablefrog.com/api/stories.php on line 400
+[23-Mar-2022 01:19:57 America/New_York] PHP Warning:  Undefined variable $seconds in /home/fablhiyo/app.fablefrog.com/api/stories.php on line 400
+[31-Aug-2022 19:53:06 America/New_York] PHP Warning:  Undefined variable $seconds in /home/fablhiyo/app.fablefrog.com/api/stories.php on line 400
+[31-Aug-2022 20:11:28 America/New_York] PHP Fatal error:  Uncaught Parse\ParseException: Bad Request in /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseClient.php:579
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseQuery.php(701): Parse\ParseClient::_request()
+#1 /home/fablhiyo/app.fablefrog.com/api/search.php(87): Parse\ParseQuery->find()
+#2 {main}
+  thrown in /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseClient.php on line 579
+[02-Sep-2022 03:46:59 America/New_York] PHP Fatal error:  Uncaught Parse\ParseException: Bad Request in /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseClient.php:579
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseQuery.php(701): Parse\ParseClient::_request()
+#1 /home/fablhiyo/app.fablefrog.com/api/stories.php(432): Parse\ParseQuery->find()
+#2 {main}
+  thrown in /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseClient.php on line 579
+[02-Sep-2022 03:47:00 America/New_York] PHP Fatal error:  Uncaught Parse\ParseException: Bad Request in /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseClient.php:579
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseObject.php(566): Parse\ParseClient::_request()
+#1 /home/fablhiyo/app.fablefrog.com/api/stories.php(134): Parse\ParseObject->fetch()
+#2 {main}
+  thrown in /home/fablhiyo/app.fablefrog.com/includes/parse-php-sdk/src/Parse/ParseClient.php on line 579

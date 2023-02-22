@@ -1,0 +1,352 @@
+a:hover {
+    color: #817cfe;
+}
+
+.full-width {
+    width: 100%
+}
+
+.whiteText {
+    color: #fff
+}
+
+.text-center {
+    text-align: center
+}
+
+.btn-primary {
+    background-color: #817cfe;
+    color: #fff
+}
+
+.btn-play-small {
+    display: block;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #817cfe;
+    color: #fff
+}
+
+.btn-play-large {
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    background-color: #817cfe;
+    color: #fff
+}
+
+.play-icon {
+    color: #fff;
+    flex-shrink: 0;
+    font-size: 40px
+}
+
+.auto-margin {
+    margin: auto!important
+}
+
+.tab {
+    display: inline-block;
+    padding: .6em 1.4em;
+    font-weight: 700;
+    border-radius: 1.5em;
+    transition: .2s ease-in-out
+}
+
+.tab:hover {
+    background-color: #817cfe;
+    text-decoration: none;
+    opacity: .7;
+    color: #fff
+}
+
+.small-tab {
+    display: inline-block;
+    padding: .1em .5em;
+    font-size: 12px;
+    border-radius: 1.5em;
+    transition: .2s ease-in-out
+}
+
+.small-tab:hover {
+    background-color: #817cfe;
+    text-decoration: none;
+    opacity: .7;
+    color: #fff
+}
+
+.disable-tab {
+    background-color: #f1f1f1;
+    color: #000000
+}
+
+.selected-tab {
+    background-color: #817cfe;
+    color: #fff;
+    /*border-radius: 1.5em 0 0 1.5em;*/
+}
+
+.leftTab{
+    border-radius: 1.5em 0 0 1.5em;
+    border: 1px solid #817cfe;
+    background-color: white;
+    color: black;
+}
+.rightTab{
+    border-radius: 0 1.5em 1.5em 0;
+    border: 1px solid #817cfe;
+    background-color: white;
+    color: black;
+}
+
+.activeLeftTab{
+    border-radius: 1.5em 0 0 1.5em;
+    background-color: #817cfe;
+    color: #fff;
+    opacity: 1 !important;
+
+
+}
+.activeRightTab{
+    border-radius: 0 1.5em 1.5em 0;
+    background-color: #817cfe;
+    color: #fff;
+    opacity: 1 !important;
+}
+
+.topInterests {
+    background-color: #fff;
+    border-radius: 10px
+}
+
+.topInterests .mainText {
+    font-size: .9em;
+    color: var(--fontcolor)
+}
+
+.topInterests .meetHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 24px
+}
+
+.topInterests .mainText.black {
+    color: #000
+}
+
+.topInterests .bgIcon {
+    background-color: #fff
+}
+
+.topInterests .meetCard {
+    border-radius: 1em;
+    padding: 1em;
+    background-color: #fff;
+    z-index: 10000
+}
+
+.topInterests .meetCard .meetCardHeading {
+    font-weight: 700;
+    margin-bottom: .3em
+}
+
+.topInterests .meetCard .blueBtn {
+    padding: .4em 1em;
+    width: unset;
+    font-size: .9em;
+    font-weight: 400;
+    display: inline-block
+}
+
+.topInterests .owl-carousel .owl-next span {
+    position: absolute;
+    font-size: 2.3em;
+    right: -15px;
+    top: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    color: #000!important;
+    text-align: center;
+    line-height: 1.1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1)
+}
+
+.topInterests .owl-carousel .owl-prev span {
+    position: absolute;
+    font-size: 2.3em;
+    left: -15px;
+    top: 80px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: inline-block;
+    width: 1.2em;
+    height: 1.2em;
+    color: #000!important;
+    text-align: center;
+    line-height: 1.1em;
+    text-align: center;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%)
+}
+
+.modalInput {
+    display: block;
+    width: 100%;
+    border-radius: .3em;
+    border: 1px solid #dedede;
+    padding: .6em 2em;
+    font-size: .8em;
+    outline: 0;
+    margin-bottom: 1em
+}
+
+.modalInput::placeholder {
+    color: gray;
+}
+
+.modalInput {
+    border-right: none;
+    border-radius: .3em 0 0 .3em
+}
+
+.mainBtn {
+    background-color: #817cfe;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    font-size: .8em;
+    color: #fff;
+    padding: .5em;
+    text-align: center;
+    border-radius: .3em;
+    margin-bottom: 1em;
+    border: none;
+    transition: .2s ease-in-out
+}
+
+.oddInput {
+    display: flex;
+    align-items: center
+}
+
+a {
+    text-decoration: none;
+    color: #fff
+}
+
+@media (max-width:768px) {
+    .topInterests {
+        background-color: transparent
+    }
+    .play-icon {
+        font-size: 25px
+    }
+    .btn-play-large {
+        height: 60px;
+        width: 60px
+    }
+}
+
+.chip {
+    padding: 0 12px;
+    background-color: #d3d3d3;
+    border-radius: 100px;
+    display: inline-flex;
+    margin: 4px;
+    color: #000;
+    align-items: center;
+    height: 32px;
+    font-size: 14px;
+    cursor: pointer;
+    border: none
+}
+
+.chip .icon {
+    font-size: 16px;
+    color: rgba(0, 0, 0, .54);
+    width: 20px;
+    text-align: center
+}
+
+.chip .icon--leadind {
+    margin: 2px 4px 0 -4px
+}
+
+.chip .icon--trailing {
+    margin: 2px -4px 0 4px
+}
+
+.chips__choice .chip.chip--active {
+    color: #fff;
+    background-color: #817cfe
+}
+
+.chips__filter .chip .chip--check {
+    display: none
+}
+
+.chips__filter .chip.chip--active .chip--check {
+    display: block
+}
+
+.recording-text {
+    text-decoration: blink;
+    -webkit-animation-name: blinker;
+    -webkit-animation-duration: .6s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-direction: alternate
+}
+
+@-webkit-keyframes blinker {
+    from {
+        opacity: 1
+    }
+    to {
+        opacity: 0
+    }
+}
+
+button {
+    padding: 5px 10px;
+    border: 1px solid grey;
+    font-size: 18px;
+    background: #fff
+}
+
+.audio-controls {
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    justify-content: center
+}
+
+.audio-controls button {
+    margin: 0 5px
+}
+
+canvas {
+    margin-top: 10px;
+    background-color: #000
+}
+
+select {
+    height: 25px;
+    margin: 0 5px
+}
+
+.app {
+    text-align: center;
+    padding-top: 20px
+}

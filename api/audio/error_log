@@ -1,0 +1,15 @@
+[19-Nov-2021 05:37:24 UTC] PHP Fatal error:  Uncaught Alchemy\BinaryDriver\Exception\ExecutableNotFoundException: Executable not found, proposed : avprobe, ffprobe in /home/fablhiyo/app.fablefrog.com/api/ffmpeg/vendor/alchemy/binary-driver/src/Alchemy/BinaryDriver/AbstractBinary.php:159
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/api/ffmpeg/vendor/php-ffmpeg/php-ffmpeg/src/FFMpeg/Driver/FFProbeDriver.php(48): Alchemy\BinaryDriver\AbstractBinary::load()
+#1 /home/fablhiyo/app.fablefrog.com/api/ffmpeg/vendor/php-ffmpeg/php-ffmpeg/src/FFMpeg/FFProbe.php(226): FFMpeg\Driver\FFProbeDriver::create()
+#2 /home/fablhiyo/app.fablefrog.com/api/ffmpeg/vendor/php-ffmpeg/php-ffmpeg/src/FFMpeg/FFMpeg.php(132): FFMpeg\FFProbe::create()
+#3 /home/fablhiyo/app.fablefrog.com/api/audio/test.php(11): FFMpeg\FFMpeg::create()
+#4 {main}
+
+Next FFMpeg\Exception\ExecutableNotFoundException: Unable to load FFProbe in /home/fablhiyo/app.fablefrog.com/api/ffmpeg/vendor/php-ffmpeg/php-ffmpeg/src/FFMpeg/Driver/FFProbeDriver.php:50
+Stack trace:
+#0 /home/fablhiyo/app.fablefrog.com/api/ffmpeg/vendor/php-ffmpeg/php-ffmpeg/src/FFMpeg/FFProbe.php(226): FFMpeg\Driver\FFProbeDriver::create()
+#1 /home/fablhiyo/app.fablefrog.com/api/ffmpeg/vendor/php-ffmpeg/php-ffmpeg/src/FFMpeg/FFMpeg.php(132): FFMpeg\FFProbe::create()
+#2 /home/fablhiyo/app.fablefrog.com/api/audio/test.php(11): FFMpeg\FFMpeg::create()
+#3 {main}
+  thrown in /home/fablhiyo/app.fablefrog.com/api/ffmpeg/vendor/php-ffmpeg/php-ffmpeg/src/FFMpeg/Driver/FFProbeDriver.php on line 50

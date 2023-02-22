@@ -1,0 +1,15 @@
+Options +FollowSymLinks
+RewriteEngine On
+
+php_value memory_limit 128M
+
+RewriteRule ^topics/(.*)/(.*)$ ./topics.php?topic=$1&id=$2
+RewriteRule ^topics/ ./topics.php
+RewriteRule ^suggestions/ ./suggestions.php
+RewriteRule ^faq/ ./faq.php
+RewriteRule ^profile/(.*)$ ./profile.php?user=$1
+RewriteRule ^search/(.*)$ ./search.php?q=$1
+RewriteRule ^interests/(.*)/(.*)$ ./interests.php?interest=$1&id=$2
+RewriteRule ^explore/(.*)/(.*)$ ./explore.php?topic=$1&id=$2
+RewriteRule ^index/ ./index.php
+ErrorDocument 404 /404.php
